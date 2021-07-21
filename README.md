@@ -52,10 +52,9 @@ OR
 	Note to Reader: I have delibrately not assigned Label2 & Label3 which can be above the code segment discussed, below or inbetwee or any permutation. This is left to the Reader to analyse for himself/herself. The Theory discussed below (if understood very well) covers all the permutations. Hence a simple lemma is chosen.
 
 	The core of the parsing is based on the below segment of code:
-			Label0: go to Label5
-             	
+Label0: go to Label5
 Label1: If(condition1) then{
-					Goto Label2
+		Goto Label2
   }
 LabelERR1: Elseif (condition2) then {
 	Goto Label3
@@ -63,7 +62,5 @@ LabelERR1: Elseif (condition2) then {
 LabelERR2: Else {
        Goto Next_line.
 	}
-                  Next_line: x=x+1
-                  
-
+Next_line: x=x+1
 Even the above “seemingly nonsensical code” follows the basic Dataflow/ControlFlow rules/techniques/grammar (other than Java grammar or C grammar).
